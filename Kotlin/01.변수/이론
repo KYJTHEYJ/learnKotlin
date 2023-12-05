@@ -1,0 +1,24 @@
+01. 변수
+
+- 변경 가능한 변수
+    - var
+
+- 변경이 불가능한 변수
+    - val
+
+선언법
+- val / var 이름
+    - var kyj
+    - val YJ
+
+할당법
+- val / var 이름 = 값
+    - var KYJ = "myName"
+
+암묵적 규칙
+- val 선언시 대문자로!
+    - val KYJ = "myName"
+- var 선언시 소문자로!
+    - var whatsYourName = "KYJ"
+
+- 코틀린 코딩 컨벤션 한번 읽어보고, 세팅!

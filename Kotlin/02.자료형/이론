@@ -1,0 +1,9 @@
+02. 자료형
+
+- 자료형 추론
+var changeYes : Int = 100
+var changeYesButNoType = 100
+-> 이 경우 자동으로 Int로 자료형을 추론해준다.
+
+* 자료형 추론 보다는 직접 선언을 하는 것이 더 좋다.
+
