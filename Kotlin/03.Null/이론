@@ -1,0 +1,15 @@
+NULL
+- 존재하지 않는 상태
+
+C = A + B 라는 연산이 있을 때,
+A OR B가 NULL이면 에러 -> 연산 전 NULL 체크 필요
+
+그래서 나온 개념 -> NullSafety
+- 코틀린의 가장 큰 특징 중 하나
+
+NULL은 상태를 표현할 수 있다는 점이 중요 (아무 것도 없는)
+
+코틀린에서 NULL 표현법
+    - val NUMBER : Int? = null (nullable)
+    - val NUMBER : Int = null(x) (non-nullable)
+-> ?가 붙어야 nullable 한 변수를 선언할 수 있다
