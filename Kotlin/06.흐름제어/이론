@@ -1,0 +1,15 @@
+06. 흐름제어
+
+- if 문
+    - 생략
+    - 변수에 값을 넣을 때 쓸 수 있음 (else 필수)
+    ex) var num: Int = if(num1 == 10) 100 else 200
+
+- when
+    when(조건을 검사할 값) {
+        case1 -> 동작1 "조건을 검사할 값 1" -> return 20
+        case2 -> 동작2 "조건을 검사할 값 2" -> return 30
+        else -> 동작3
+    }
+
+    - 또한 when문은 Java의 Switch와 비슷비슷하나, break 없이 바로 종료된다. 즉 바로 해당하는 첫번째 결과만 보여주고 끝이 난다.

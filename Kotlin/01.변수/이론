@@ -15,6 +15,13 @@
 - val / var 이름 = 값
     - var KYJ = "myName"
 
+-> 값을 만들어내는 식들
+    - 10 + 20
+    - if(..) 10 else 20
+    - 기타 등등..
+-> 코틀린은 식, 즉 값을 만든다면 변수에 할당할 수 있다
+    ex) val WOW = if(num1 == 100) 100 else 999
+
 암묵적 규칙
 - val 선언시 대문자로!
     - val KYJ = "myName"
