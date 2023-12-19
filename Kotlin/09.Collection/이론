@@ -1,0 +1,50 @@
+09.Collection
+
+- 변경가능 여부 -> var, val 과 동일
+    - Mutable -> 변경
+    - Immutable -> 불변
+
+- 특징으로 분리
+    - List
+        - Mutable, Immutable
+    - Set
+        - Mutable, Immutable
+    - Map
+        - Mutable, Immutable
+
+    - 전부 크기가 고정되어 있지 않다
+
+* Tip
+    mutable, immutable 중엔 immutable 한 것을 사용하는 게 더 좋다
+    -> 코드량이 많아져서 만약 선언시 중간에 mutable 하다면 추적이 필요해 가독성과 코드 흐름이 역방향으로 될 수 있기 때문에..
+
+- List
+    - 형태
+        - Immutable
+            - listOf<자료형>(값1, 값2 ....)
+            - val numbers = listOf<Int>(1,2,3)
+
+        - Mutable
+            - mutableListOf<자료형>(값1, 값2 ....)
+            - var numbers = mutableListOf<Int>(1,2,3)
+
+- Set
+    - 집합 -> 똑같은 값을 허락하지 않는다
+    - immutable
+        - 형태
+            - setOf<자료형>(값1, 값2, 값3, 값1, 값1, 값2) -> (값1, 값2, 값3) 의 형태와 동일함
+
+    - mutable
+        - 형태
+            - mutableSetOf<자료형>(값1, 값2, 값3, 값1, 값1, 값2) -> (값1, 값2, 값3) 의 형태와 동일함
+
+- Map
+    - 키-밸류 형태
+    - immutable
+        - 형태
+            - mapOf<자료형, 자료형>(키1 to 밸류1, 키2 to 밸류2 ....)
+            - val partAndNames = mapOf<String, String>("개발직" to "김모군" ....)
+
+    - mutable
+        - 형태
+            - var partAndNames = mutableMapOf<String, String>("개발직" to "김모군" ....)
