@@ -13,7 +13,7 @@
 
 할당법
 - val / var 이름 = 값
-    - var KYJ = "myName"
+    - var kyj = "myName"
 
 -> 값을 만들어내는 식들
     - 10 + 20

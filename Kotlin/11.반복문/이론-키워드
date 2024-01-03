@@ -1,0 +1,12 @@
+for(i in 1..10) {
+    for(j in 1..10) {
+        본문1
+        키워드(break - j 반복문 탈출, continue - j 반복문의 시작으로 탈출, return - 전체 반복문을 탈출함)
+        본문2
+    }
+}
+
+1.break -> 가까운 루프 탈출 - Java와 동일
+2.continue -> 루프의 시작점으로 탈출 - Java와 동일
+3.return -> 가장 가까운 메소드를 탈출 - Java와 동일
+4.label -> 3가지 키워드들의 탈출지점을 정해줌
