@@ -18,6 +18,8 @@
     mutable, immutable 중엔 immutable 한 것을 사용하는 게 더 좋다
     -> 코드량이 많아져서 만약 선언시 중간에 mutable 하다면 추적이 필요해 가독성과 코드 흐름이 역방향으로 될 수 있기 때문에..
 
+    빈 map을 선언할 때는 mutable한 맵을 반드시 사용해라
+
 - List
     - 형태
         - Immutable
