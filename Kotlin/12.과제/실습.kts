@@ -131,28 +131,20 @@ fun getAllDice(): Map<Int, Int> {
 
 println(getAllDice())
 
-fun getAllDice2(): MutableList<MutableList<Int>> {
+fun getAllDice2(): List<List<Int>> {
     var diceRange = 1..6
-    var resultList = mutableListOf<MutableList<Int>>()
+    var resultList = mutableListOf<List<Int>>()
 
     for (diceRoll in diceRange) {
-        if (diceRoll == 6)
-            break;
-
-        var dice6List = mutableListOf<Int>()
-
         for (diceRoll2 in diceRange) {
             if ((diceRoll + diceRoll2) == 6) {
-                dice6List.add(diceRoll)
-                dice6List.add(diceRoll2)
-                break;
+                var dice6List = listOf<Int>(diceRoll, diceRoll2)
+                resultList.add(dice6List)
             }
         }
-
-        resultList.add(dice6List)
     }
 
-    return resultList;
+    return resultList
 }
 
 println(getAllDice2())
@@ -200,10 +192,10 @@ fun soldierGroups(
     soldierGroup1: List<String>,
     soldierGroup2: List<String>,
     deleteIndex: Int
-): MutableList<MutableList<String>>? {
-    if (soldierGroup1.size < deleteIndex - 1) {
+): List<List<String>>? {
+    if (soldierGroup1.size < deleteIndex) {
         return null
-    } else if (soldierGroup2.size < deleteIndex - 1) {
+    } else if (soldierGroup2.size < deleteIndex) {
         return null
     } else {
         var group1: MutableList<String> = mutableListOf<String>()
@@ -220,8 +212,7 @@ fun soldierGroups(
         group1.removeAt(deleteIndex)
         group2.removeAt(deleteIndex)
 
-        val finalSolderGroup: MutableList<MutableList<String>> =
-            mutableListOf<MutableList<String>>()
+        var finalSolderGroup = mutableListOf<List<String>>()
 
         finalSolderGroup.add(group1)
         finalSolderGroup.add(group2)
@@ -237,8 +228,8 @@ println("-----")
 
 //9. 단수를 입력 받아 해당 단수의 값을 리스트로 출력하는 함수를 만드시오
 
-fun gugudan(number: Int): MutableList<Int> {
-    var resultList: MutableList<Int> = mutableListOf<Int>()
+fun gugudan(number: Int): List<Int> {
+    var resultList = mutableListOf<Int>()
 
     for (index in 1..9) {
         resultList.add(number * index)
@@ -254,7 +245,7 @@ println("-----")
 //10. 숫자 리스트 두개를 넣어주면 짝수 홀수로 분리된 Map을 만드는 함수를 만드시오
 //   (Map의 키는 짝수의 경우 "짝수", 홀수의 경우 "홀수" 한다)
 
-fun oddEven(numberList1: List<Int>, numberList2: List<Int>): MutableMap<String, MutableList<Int>> {
+fun oddEven(numberList1: List<Int>, numberList2: List<Int>): Map<String, List<Int>> {
     var oddList: MutableList<Int> = mutableListOf<Int>()
     var evenList: MutableList<Int> = mutableListOf<Int>()
     var resultMap: MutableMap<String, MutableList<Int>> = mutableMapOf<String, MutableList<Int>>()
