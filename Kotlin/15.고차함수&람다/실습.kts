@@ -44,5 +44,3 @@ val addTenNine5: () -> Int = {
 val addTenNine6: (Int) -> Int = {
     10 + 9
 }
-
-addTenNine(addTenNine6)
